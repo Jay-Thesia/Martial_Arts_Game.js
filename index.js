@@ -4,7 +4,6 @@ let ctx = canvas.getContext('2d');
 
 let loadImage = (src, callback) => {
     let image = document.createElement("img");
-    // var image = new Image();
     image.onload = () => callback(image);
     image.src = src;
 };
