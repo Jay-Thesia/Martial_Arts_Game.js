@@ -2,26 +2,6 @@ let canvas = document.getElementById("circle");
 let ctx = canvas.getContext('2d');
 
 
-// function draw(start_x, start_y, end_x, end_y) {
-
-//     ctx.beginPath();
-//     ctx.moveTo(start_x, start_y);
-//     ctx.lineTo(end_x, end_y);
-//     ctx.stroke();
-// }
-
-// let X = 500 / 2;
-// let Y = 100;
-// let R = 50;
-// ctx.beginPath();
-// ctx.arc(X, Y, R, 0, 2 * Math.PI);
-// ctx.stroke();
-
-// draw(250, 150, 250, 280);
-// draw(250, 200, 200, 270);
-// draw(250, 200, 298, 270);
-// draw(250, 280, 300, 340);
-// draw(250, 280, 200, 340);
 let loadImage = (src, callback) => {
     let image = document.createElement("img");
     // var image = new Image();
@@ -39,7 +19,7 @@ let frames = {
 };
 
 let imagePath = (animation, frameNumber) => {
-    return animation + "/" + frameNumber + ".png";
+    return "Photo_file/"+ animation + "/" + frameNumber + ".png";
 };
 
 let loadImages = (callback) => {
